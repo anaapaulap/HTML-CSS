@@ -19,13 +19,16 @@
 
 html, body {
     min-height: 100vh;
-    background-color: rgb(255, 254, 254);
+    background-color: rgb(255, 255, 255);
     font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-image: url('../imagens/aurora003.webp');
+    background-position: left top;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px black;
     text-align: center;
 }
 
@@ -71,14 +74,30 @@ section.normal {
 section.imagem {
     background-color: rgb(59, 59, 59);
     color: white;
+    box-shadow: inset 6px 6px 13px 0 black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.555);
+    text-shadow: 2px 2px 0px black;
 }
 
+section#img01 {
+    background-image: url('../imagens/aurora003.webp');
+    background-position: right center;
+    background-size: 100% 100%;
+    
+
+}
+
+section#img02 {
+    background-image: url('../imagens/purple.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 footer {
     background-color: black;
     color: white;
